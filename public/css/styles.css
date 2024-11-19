@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: Inter;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+  input {
+    @apply border;
+  }
+  .logo-white {
+    /* background: lightgray 50% / cover no-repeat; */
+    filter: brightness(0) invert(1);
+  }
+  .icn-hvr:hover > img{
+    filter: brightness(0) invert(1);
+    transition-duration: 300ms;
+  }
+  .menu-active{
+    @apply cursor-pointer w-full pl-10 py-4 rounded-r-full bg-main-100 border-l-4 border-main-700 text-main-600 font-medium flex gap-3;
+  }
+  .menu-unactive{
+    @apply cursor-pointer w-full pl-10 py-4 rounded-r-full border-l-4 flex gap-3 duration-300 opacity-50 hover:bg-gray-200/30 hover:opacity-100;
+  }
+  
+}
