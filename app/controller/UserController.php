@@ -33,7 +33,7 @@ class UserController
             }else{
                 if ($this->userModel->register($email, $no_telp, $password, $role_id, $alamat, $username)) {
                     // echo "Registration Successful!";
-                    header('Location: /public/dashboard');
+                    header('Location: /dashboard');
                 } else {
                     echo "Registration Failed!";
                 }
@@ -49,6 +49,7 @@ class UserController
 
     public function login()
     {
+        echo 'i';
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
             $password = filter_input(INPUT_POST, 'password');
@@ -68,8 +69,8 @@ class UserController
                     'username' => $user['username']
                 ];
 
-                echo 'user loggedin';
-                header('Location: /public/dashboard');
+                // echo 'user loggedin';
+                header('Location: /dashboard');
                 exit;
             } else {
                 // Jika login gagal, tampilkan pesan error
@@ -88,6 +89,6 @@ class UserController
         session_start();
         session_unset();
         session_destroy();
-        header('Location: /public/login');
+        header('Location: /login');
     }
 }

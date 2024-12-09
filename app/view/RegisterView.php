@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <!-- Sertakan Tailwind CSS -->
-    <link href="/public/css/output.css" rel="stylesheet">
+    <link href="/css/output.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-100">
     <div class="flex flex-col items-center justify-center container">
-        <form action="/public/register" method="post" class=" w-96 flex flex-col gap-6">
+        <form action="/register" method="post" class=" w-96 flex flex-col gap-6">
             <div class="w-full flex flex-col">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" placeholder="Tulis username disini" class="py-2 px-4">
@@ -32,7 +32,7 @@
                 <div class="flex items-center">
                     <input class="w-full py-2 px-4" type="password" id="inp-pw" name="password" autocomplete="current-password" placeholder="••••••••">
                     <div class="bg-white flex items-center h-[42px] px-4 duration-200 border hover:bg-gray-100 cursor-pointer" onclick="toogleBtn('pw','inp-pw')">
-                        <img class="" src="/public/icon/bold/eye-slash.svg" alt="eye-slash" id="pw">
+                        <img class="" src="/icon/bold/eye-slash.svg" alt="eye-slash" id="pw">
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                 <div class="flex items-center">
                     <input class="w-full py-2 px-4" type="password" id="inp-cnf-pw" name="confirm_password" autocomplete="current-password" placeholder="••••••••">
                     <div class="bg-white flex items-center h-[42px] px-4 duration-200 border hover:bg-gray-100 cursor-pointer" onclick="toogleBtn('cnf-pw', 'inp-cnf-pw')">
-                        <img class="" src="/public/icon/bold/eye-slash.svg" alt="eye-slash" id="cnf-pw">
+                        <img class="" src="/icon/bold/eye-slash.svg" alt="eye-slash" id="cnf-pw">
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                 <div class="flex items-center">
                     <input type="hidden" name="role_id" id="role_id" value="">
                     <input type="text" name="role_disp" id="role_disp" placeholder="Pilih Role" class="w-full py-2 px-4" onclick="opt()" readonly>
-                    <div class="bg-white border w-fit h-[42px] px-4 flex items-center duration-200 cursor-pointer hover:bg-gray-100" onclick="opt()"><img src="/public/icon/linear/arrow-down.svg" class="duration-200" id="arrow" alt="" srcset=""></div>
+                    <div class="bg-white border w-fit h-[42px] px-4 flex items-center duration-200 cursor-pointer hover:bg-gray-100" onclick="opt()"><img src="/icon/linear/arrow-down.svg" class="duration-200" id="arrow" alt="" srcset=""></div>
                 </div>
                 <div class="hidden" id="option">
                     <div class="bg-white w-full border border-gray-200 absolute top-16">
@@ -79,11 +79,11 @@
     <script>
         function toogleBtn(tipe, inp) {
             if (document.getElementById(tipe).alt == "eye-slash") {
-                document.getElementById(tipe).src = '/public/icon/bold/eye.svg';
+                document.getElementById(tipe).src = '/icon/bold/eye.svg';
                 document.getElementById(tipe).alt = "eye";
                 document.getElementById(inp).type = "text";
             } else if (document.getElementById(tipe).alt == "eye") {
-                document.getElementById(tipe).src = '/public/icon/bold/eye-slash.svg';
+                document.getElementById(tipe).src = '/icon/bold/eye-slash.svg';
                 document.getElementById(tipe).alt = "eye-slash";
                 document.getElementById(inp).type = "password";
             }

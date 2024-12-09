@@ -15,7 +15,7 @@ class UserModel
     {
         $hashed_password = hash("sha256", $password);
         $query = "INSERT INTO staf (email, no_telp, password, role_id, alamat, username) VALUES (:email, :no_telp, :password, :role_id, :alamat, :username)";
-        $stmt = $this->conn->prepare($query);
+        $stmt = $this->conn->prepare($query); 
         $stmt->bindParam(':email', $email);
         $stmt->bindParam(':no_telp', $no_telp);
         $stmt->bindParam(':password', $hashed_password);
