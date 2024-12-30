@@ -8,13 +8,14 @@
     <link href="/css/output.css" rel="stylesheet">
 </head>
 
-<body class="h-[100vh] flex flex-col">
+<body class="!h-screen !w-screen flex flex-col">
     <?php
     include 'bars/TopBar.php';
     ?>
 
     <div class="flex h-full w-full">
-        <?php include 'bars/SideBar.php'; ?>
+    <?php include 'bars/SideBar.php'; ?>
+        
         <div class="w-full h-full p-10">
             <div class="w-full h-full rounded-[28px] bg-gray-100/60 p-5 flex flex-col gap-5">
                 <div class="w-full h-fit flex justify-between items-center">
@@ -45,28 +46,28 @@
                         </div>
                     </div>
                     <div class="w-full h-full bg-white rounded-2xl rounded-tl-none px-6 py-2 flex flex-col justify-between">
-                        <div class="w-full flex flex-col">
-                            <div class="w-full flex px-2 py-6 gap-12 text-gray-400/80">
-                                <div class="w-8 text-sm text-center">
+                        <div class="w-full h-full flex flex-col">
+                            <div class="w-full flex px-2 py-6 xl:max-2xl:gap-6 gap-12 text-gray-400/80 text-sm xl:max-2xl:text-xs">
+                                <div class="w-8 xl:max-2xl:w-5 text-center">
                                     No</div>
-                                <div class="w-full max-w-[272px] text-sm">
-                                    Nama barang <span class="text-gray-300">(kode barang)</span></div>
-                                <div class="w-20 text-sm">
+                                <div class="w-full max-w-[272px] xl:max-2xl:max-w-[188px] ">
+                                    Nama barang <span class="2xl:hidden"><br></span><span class="text-gray-300">(kode barang)</span></div>
+                                <div class="w-20">
                                     Tipe</div>
-                                <div class="w-12 text-sm text-center">
+                                <div class="w-12 xl:max-2xl:w-[26px] text-center">
                                     Stok</div>
-                                <div class="w-28 text-sm">
+                                <div class="w-28 ">
                                     Tgl. Pembaruan</div>
-                                <div class="w-28 text-sm">
+                                <div class="w-28">
                                     Lokasi</div>
-                                <div class="w-[180px] text-sm">
+                                <div class="w-[180px] xl:max-2xl:w-[110px]">
                                     Harga</div>
-                                <div class="w-[98px] text-sm">
+                                <div class="w-[98px] xl:max-2xl:w-[80px]">
                                     Kondisi</div>
-                                <div class="w-[100px] text-sm">
+                                <div class="w-[100px]">
                                     Aksi</div>
                             </div>
-                            <div class="flex items-center px-2 py-4 gap-12 text-gray-400">
+                            <!-- <div class="w-full flex items-center px-2 py-4 xl:gap-6 gap-12 text-gray-400">
                                 <div class="w-8 text-sm text-center">
                                     1
                                 </div>
@@ -98,7 +99,7 @@
                                     <div class=" w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center duration-300 cursor-pointer hover:bg-gray-200"><img class="w-5" src="/icon/bold/edit-2.svg" /></div>
                                     <div class=" w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center duration-300 cursor-pointer hover:bg-red-200"><img class="w-5" src="/icon/bold/trash.svg" /></div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="w-full pb-5 flex justify-between items-center">
                             <div class=" flex gap-[10px]">
@@ -123,8 +124,10 @@
     </div>
 
     <div class="hidden h-full w-full fixed bg-black/40 z-40 justify-end" id="cardBg">
-        <div class="h-full w-1/3 px-10 flex flex-col justify-center bg-white shadow-2xl card rounded-l-3xl z-50" id="card">
-            <h1 class="font-bold text-3xl">Form Tambah Barang</h1>
+        <div class="h-full w-1/3 flex flex-col bg-white shadow-2xl card rounded-l-3xl z-50" id="card">
+            <div class="px-8 h-[75.59px] flex flex-col justify-center gap-2 border-b border-gray-400">
+                <h1 class="font-bold text-3xl">Form Tambah Barang</h1>
+            </div>
         </div>
     </div>
     <script>

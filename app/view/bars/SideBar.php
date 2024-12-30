@@ -1,4 +1,4 @@
-<nav class="min-w-[336px] h-full flex flex-col justify-between border-r border-[#CCDAE4] py-8 pr-6">
+<nav class=" ~xl/2xl:~w-80/96 h-full flex flex-col justify-between border-r border-[#CCDAE4] py-8 pr-6">
     <div class="w-full flex flex-col gap-8">
         <a href="/dashboard" class="menu-active" id="sub-menu-1" onmouseleave="outhover(event,'home-1','home')" onmouseover="onhover(event,'home-1','home')">
             <img src="/icon/linear/home-1.svg" id="home" alt="">

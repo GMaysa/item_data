@@ -709,33 +709,33 @@ input{
   width: 100%;
 }
 
-@media (min-width: 640px){
+@media (min-width: 40rem){
   .container{
-    max-width: 640px;
+    max-width: 40rem;
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 48rem){
   .container{
-    max-width: 768px;
+    max-width: 48rem;
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 64rem){
   .container{
-    max-width: 1024px;
+    max-width: 64rem;
   }
 }
 
-@media (min-width: 1280px){
+@media (min-width: 80rem){
   .container{
-    max-width: 1280px;
+    max-width: 80rem;
   }
 }
 
-@media (min-width: 1536px){
+@media (min-width: 96rem){
   .container{
-    max-width: 1536px;
+    max-width: 96rem;
   }
 }
 
@@ -803,6 +803,10 @@ input{
   margin-bottom: 0.25rem;
 }
 
+.mb-1\.5{
+  margin-bottom: 0.375rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -843,12 +847,8 @@ input{
   height: 5rem !important;
 }
 
-.\!h-\[284px\]{
-  height: 284px !important;
-}
-
-.\!h-\[428px\]{
-  height: 428px !important;
+.\!h-screen{
+  height: 100vh !important;
 }
 
 .h-10{
@@ -867,10 +867,6 @@ input{
   height: 0.5rem;
 }
 
-.h-28{
-  height: 7rem;
-}
-
 .h-5{
   height: 1.25rem;
 }
@@ -881,14 +877,6 @@ input{
 
 .h-\[15px\]{
   height: 15px;
-}
-
-.h-\[172px\]{
-  height: 172px;
-}
-
-.h-\[22\.22px\]{
-  height: 22.22px;
 }
 
 .h-\[30px\]{
@@ -915,6 +903,10 @@ input{
   height: 670px;
 }
 
+.h-\[75\.59px\]{
+  height: 75.59px;
+}
+
 .h-fit{
   height: -moz-fit-content;
   height: fit-content;
@@ -922,6 +914,26 @@ input{
 
 .h-full{
   height: 100%;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-7{
+  height: 1.75rem;
+}
+
+.h-64{
+  height: 16rem;
+}
+
+.\!w-\[110px\]{
+  width: 110px !important;
+}
+
+.\!w-screen{
+  width: 100vw !important;
 }
 
 .w-1\/2{
@@ -964,8 +976,8 @@ input{
   width: 0.75rem;
 }
 
-.w-36{
-  width: 9rem;
+.w-48{
+  width: 12rem;
 }
 
 .w-5{
@@ -974,6 +986,10 @@ input{
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-7{
+  width: 1.75rem;
 }
 
 .w-8{
@@ -1004,14 +1020,6 @@ input{
   width: 180px;
 }
 
-.w-\[22\.22px\]{
-  width: 22.22px;
-}
-
-.w-\[272px\]{
-  width: 272px;
-}
-
 .w-\[30px\]{
   width: 30px;
 }
@@ -1037,12 +1045,16 @@ input{
   width: 100%;
 }
 
-.min-w-\[168px\]{
-  min-width: 168px;
+.w-screen{
+  width: 100vw;
 }
 
-.min-w-\[336px\]{
-  min-width: 336px;
+.\!w-full{
+  width: 100% !important;
+}
+
+.min-w-\[168px\]{
+  min-width: 168px;
 }
 
 .max-w-\[1220px\]{
@@ -1065,6 +1077,10 @@ input{
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -1093,10 +1109,6 @@ input{
 
 .justify-between{
   justify-content: space-between;
-}
-
-.gap-0\.5{
-  gap: 0.125rem;
 }
 
 .gap-1{
@@ -1185,9 +1197,9 @@ input{
   border-radius: 0.75rem;
 }
 
-.rounded-l-2xl{
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+.rounded-l-3xl{
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 }
 
 .rounded-r-full{
@@ -1198,11 +1210,6 @@ input{
 .rounded-t-2xl{
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-}
-
-.rounded-l-3xl{
-  border-top-left-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
 }
 
 .rounded-tl-none{
@@ -1275,11 +1282,6 @@ input{
 .bg-\[\#fbfbfb\]{
   --tw-bg-opacity: 1;
   background-color: rgb(251 251 251 / var(--tw-bg-opacity));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-black\/40{
@@ -1452,22 +1454,8 @@ input{
   padding-bottom: 2rem;
 }
 
-.px-9{
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .pb-5{
   padding-bottom: 1.25rem;
-}
-
-.pb-\[15px\]{
-  padding-bottom: 15px;
 }
 
 .pl-10{
@@ -1506,6 +1494,10 @@ input{
   text-align: center;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1520,23 +1512,9 @@ input{
   font-size: 28px;
 }
 
-.text-\[32px\]{
-  font-size: 32px;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-xs{
@@ -1568,6 +1546,10 @@ input{
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-400\/60{
+  color: rgb(156 163 175 / 0.6);
 }
 
 .text-gray-400\/80{
@@ -1603,6 +1585,10 @@ input{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-white\/50{
+  color: rgb(255 255 255 / 0.5);
+}
+
 .text-white\/60{
   color: rgb(255 255 255 / 0.6);
 }
@@ -1623,15 +1609,15 @@ input{
   opacity: 0.5;
 }
 
-.shadow-\[0_1px_60px_-15px_rgba\(0\2c 0\2c 0\2c 0\.3\)\]{
-  --tw-shadow: 0 1px 60px -15px rgba(0,0,0,0.3);
-  --tw-shadow-colored: 0 1px 60px -15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-2xl{
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0_1px_60px_-15px_rgba\(0\2c 0\2c 0\2c 0\.3\)\]{
+  --tw-shadow: 0 1px 60px -15px rgba(0,0,0,0.3);
+  --tw-shadow-colored: 0 1px 60px -15px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1674,6 +1660,9 @@ input{
   transition-duration: 300ms;
 }
 
+.\~h-8 /* error - Missing end value */{
+}
+
 .hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1713,6 +1702,11 @@ input{
   padding-right: 1rem;
 }
 
+.hover\:text-main-500:hover{
+  --tw-text-opacity: 1;
+  color: rgb(26 145 221 / var(--tw-text-opacity));
+}
+
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1720,4 +1714,541 @@ input{
 
 .hover\:opacity-100:hover{
   opacity: 1;
+}
+
+.\~xl\/2xl\:h-8{
+  /*
+error - Fluid variants can only be used with fluid utilities
+*/
+}
+
+.\~xl\/2xl\:\~text-base\/lg{
+  font-size: clamp(1rem,0.375rem + 0.781vw,1.125rem)/* fluid type from 1rem at 80rem to 1.125rem at 96rem */;
+  line-height: clamp(1.5rem,0.25rem + 1.56vw,1.75rem)/* fluid from 1.5rem at 80rem to 1.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~text-base\/xl{
+  font-size: clamp(1rem,-0.25rem + 1.56vw,1.25rem)/* fluid type from 1rem at 80rem to 1.25rem at 96rem */;
+  line-height: clamp(1.5rem,0.25rem + 1.56vw,1.75rem)/* fluid from 1.5rem at 80rem to 1.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~text-lg\/2xl{
+  font-size: clamp(1.125rem,-0.75rem + 2.344vw,1.5rem)/* fluid type from 1.125rem at 80rem to 1.5rem at 96rem */;
+  line-height: clamp(1.75rem,0.5rem + 1.56vw,2rem)/* fluid from 1.75rem at 80rem to 2rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~text-lg\/xl{
+  font-size: clamp(1.125rem,0.5rem + 0.781vw,1.25rem)/* fluid type from 1.125rem at 80rem to 1.25rem at 96rem */;
+  line-height: 1.75rem;
+}
+
+.\~xl\/2xl\:\~text-sm\/base{
+  font-size: clamp(0.875rem,0.25rem + 0.781vw,1rem)/* fluid type from 0.875rem at 80rem to 1rem at 96rem */;
+  line-height: clamp(1.25rem,0rem + 1.56vw,1.5rem)/* fluid from 1.25rem at 80rem to 1.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~text-xl\/2xl{
+  font-size: clamp(1.25rem,0rem + 1.56vw,1.5rem)/* fluid type from 1.25rem at 80rem to 1.5rem at 96rem */;
+  line-height: clamp(1.75rem,0.5rem + 1.56vw,2rem)/* fluid from 1.75rem at 80rem to 2rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~text-xl\/3xl{
+  font-size: clamp(1.25rem,-1.875rem + 3.906vw,1.875rem)/* fluid type from 1.25rem at 80rem to 1.875rem at 96rem */;
+  line-height: clamp(1.75rem,-0.75rem + 3.13vw,2.25rem)/* fluid from 1.75rem at 80rem to 2.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~text-xs\/sm{
+  font-size: clamp(0.75rem,0.125rem + 0.781vw,0.875rem)/* fluid type from 0.75rem at 80rem to 0.875rem at 96rem */;
+  line-height: clamp(1rem,-0.25rem + 1.56vw,1.25rem)/* fluid from 1rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~text-xs\/base{
+  font-size: clamp(0.75rem,-0.5rem + 1.56vw,1rem)/* fluid type from 0.75rem at 80rem to 1rem at 96rem */;
+  line-height: clamp(1rem,-1.5rem + 3.13vw,1.5rem)/* fluid from 1rem at 80rem to 1.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~-top-\[2\.5px\]{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~h-10\/11{
+  height: clamp(2.5rem,1.25rem + 1.56vw,2.75rem)/* fluid from 2.5rem at 80rem to 2.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-10\/12{
+  height: clamp(2.5rem,0rem + 3.13vw,3rem)/* fluid from 2.5rem at 80rem to 3rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-14\/28{
+  height: clamp(3.5rem,-14rem + 21.88vw,7rem)/* fluid from 3.5rem at 80rem to 7rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-52\/72{
+  height: clamp(13rem,-12rem + 31.25vw,18rem)/* fluid from 13rem at 80rem to 18rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-7\/10{
+  height: clamp(1.75rem,-2rem + 4.69vw,2.5rem)/* fluid from 1.75rem at 80rem to 2.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-8\/12{
+  height: clamp(2rem,-3rem + 6.25vw,3rem)/* fluid from 2rem at 80rem to 3rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-9\/11{
+  height: clamp(2.25rem,-0.25rem + 3.13vw,2.75rem)/* fluid from 2.25rem at 80rem to 2.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-40\/72{
+  height: clamp(10rem,-30rem + 50vw,18rem)/* fluid from 10rem at 80rem to 18rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-36\/72{
+  height: clamp(9rem,-36rem + 56.25vw,18rem)/* fluid from 9rem at 80rem to 18rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-32\/72{
+  height: clamp(8rem,-42rem + 62.5vw,18rem)/* fluid from 8rem at 80rem to 18rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-7{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~h-7\/8{
+  height: clamp(1.75rem,0.5rem + 1.56vw,2rem)/* fluid from 1.75rem at 80rem to 2rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-32\/64{
+  height: clamp(8rem,-32rem + 50vw,16rem)/* fluid from 8rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-28\/64{
+  height: clamp(7rem,-38rem + 56.25vw,16rem)/* fluid from 7rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-36\/64{
+  height: clamp(9rem,-26rem + 43.75vw,16rem)/* fluid from 9rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-40\/64{
+  height: clamp(10rem,-20rem + 37.5vw,16rem)/* fluid from 10rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-44\/64{
+  height: clamp(11rem,-14rem + 31.25vw,16rem)/* fluid from 11rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-4\/5{
+  height: clamp(1rem,-0.25rem + 1.56vw,1.25rem)/* fluid from 1rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-4\/6{
+  height: clamp(1rem,-1.5rem + 3.13vw,1.5rem)/* fluid from 1rem at 80rem to 1.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-48\/64{
+  height: clamp(12rem,-8rem + 25vw,16rem)/* fluid from 12rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-52\/64{
+  height: clamp(13rem,-2rem + 18.75vw,16rem)/* fluid from 13rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-8{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~h-56\/64{
+  height: clamp(14rem,4rem + 12.5vw,16rem)/* fluid from 14rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-10\/8{
+  height: clamp(2rem,5rem + -3.13vw,2.5rem)/* fluid from 2.5rem at 80rem to 2rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-60\/64{
+  height: clamp(15rem,10rem + 6.25vw,16rem)/* fluid from 15rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-72\/64{
+  height: clamp(16rem,28rem + -12.5vw,18rem)/* fluid from 18rem at 80rem to 16rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~h-64{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~w-10\/11{
+  width: clamp(2.5rem,1.25rem + 1.56vw,2.75rem)/* fluid from 2.5rem at 80rem to 2.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-10\/12{
+  width: clamp(2.5rem,0rem + 3.13vw,3rem)/* fluid from 2.5rem at 80rem to 3rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-3\/5{
+  width: clamp(0.75rem,-1.75rem + 3.13vw,1.25rem)/* fluid from 0.75rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-36\/48{
+  width: clamp(9rem,-6rem + 18.75vw,12rem)/* fluid from 9rem at 80rem to 12rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-4\/5{
+  width: clamp(1rem,-0.25rem + 1.56vw,1.25rem)/* fluid from 1rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-4\/6{
+  width: clamp(1rem,-1.5rem + 3.13vw,1.5rem)/* fluid from 1rem at 80rem to 1.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-48\/56{
+  width: clamp(12rem,2rem + 12.5vw,14rem)/* fluid from 12rem at 80rem to 14rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-6\/8{
+  width: clamp(1.5rem,-1rem + 3.13vw,2rem)/* fluid from 1.5rem at 80rem to 2rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-7\/10{
+  width: clamp(1.75rem,-2rem + 4.69vw,2.5rem)/* fluid from 1.75rem at 80rem to 2.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-8\/12{
+  width: clamp(2rem,-3rem + 6.25vw,3rem)/* fluid from 2rem at 80rem to 3rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-8\/9{
+  width: clamp(2rem,0.75rem + 1.56vw,2.25rem)/* fluid from 2rem at 80rem to 2.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-80\/96{
+  width: clamp(20rem,0rem + 25vw,24rem)/* fluid from 20rem at 80rem to 24rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-3\/4{
+  width: clamp(0.75rem,-0.5rem + 1.56vw,1rem)/* fluid from 0.75rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-0\/1{
+  width: clamp(0rem,-1.25rem + 1.56vw,0.25rem)/* fluid from 0rem at 80rem to 0.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-0\/1\.5{
+  width: clamp(0rem,-1.875rem + 2.344vw,0.375rem)/* fluid from 0rem at 80rem to 0.375rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-4\/1{
+  width: clamp(0.25rem,4.75rem + -4.69vw,1rem)/* fluid from 1rem at 80rem to 0.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-4\/1\.5{
+  width: clamp(0.375rem,4.125rem + -3.906vw,1rem)/* fluid from 1rem at 80rem to 0.375rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-2\/4{
+  width: clamp(0.5rem,-2rem + 3.13vw,1rem)/* fluid from 0.5rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-1\/2{
+  width: clamp(0.25rem,-1rem + 1.56vw,0.5rem)/* fluid from 0.25rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-1\/5{
+  width: clamp(0.25rem,-4.75rem + 6.25vw,1.25rem)/* fluid from 0.25rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~w-4\/4{
+  /*
+error - Start and end values are both `1rem`
+*/
+}
+
+.\~xl\/2xl\:\~gap-0{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~gap-0\.5\/1{
+  gap: clamp(0.125rem,-0.5rem + 0.781vw,0.25rem)/* fluid from 0.125rem at 80rem to 0.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-0\.5\/2{
+  gap: clamp(0.125rem,-1.75rem + 2.344vw,0.5rem)/* fluid from 0.125rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-2\/3{
+  gap: clamp(0.5rem,-0.75rem + 1.56vw,0.75rem)/* fluid from 0.5rem at 80rem to 0.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-2\/4{
+  gap: clamp(0.5rem,-2rem + 3.13vw,1rem)/* fluid from 0.5rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-2\/5{
+  gap: clamp(0.5rem,-3.25rem + 4.69vw,1.25rem)/* fluid from 0.5rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-3\/5{
+  gap: clamp(0.75rem,-1.75rem + 3.13vw,1.25rem)/* fluid from 0.75rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-1\/2{
+  gap: clamp(0.25rem,-1rem + 1.56vw,0.5rem)/* fluid from 0.25rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-1\/4{
+  gap: clamp(0.25rem,-3.5rem + 4.69vw,1rem)/* fluid from 0.25rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-0\/2{
+  gap: clamp(0rem,-2.5rem + 3.13vw,0.5rem)/* fluid from 0rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-1{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~gap-1\.5\/3{
+  gap: clamp(0.375rem,-1.5rem + 2.344vw,0.75rem)/* fluid from 0.375rem at 80rem to 0.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-1\/3{
+  gap: clamp(0.25rem,-2.25rem + 3.13vw,0.75rem)/* fluid from 0.25rem at 80rem to 0.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-0\.5\/4{
+  gap: clamp(0.125rem,-4.25rem + 5.469vw,1rem)/* fluid from 0.125rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-3{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~gap-3\.5\/5{
+  gap: clamp(0.875rem,-1rem + 2.344vw,1.25rem)/* fluid from 0.875rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-2{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~gap-2\.5\/5{
+  gap: clamp(0.625rem,-2.5rem + 3.906vw,1.25rem)/* fluid from 0.625rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-32\/5{
+  gap: clamp(1.25rem,41.75rem + -42.19vw,8rem)/* fluid from 8rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~gap-1\.5\/4{
+  gap: clamp(0.375rem,-2.75rem + 3.906vw,1rem)/* fluid from 0.375rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-1\/2{
+  padding: clamp(0.25rem,-1rem + 1.56vw,0.5rem)/* fluid from 0.25rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-2\/4{
+  padding: clamp(0.5rem,-2rem + 3.13vw,1rem)/* fluid from 0.5rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-7\/10{
+  padding: clamp(1.75rem,-2rem + 4.69vw,2.5rem)/* fluid from 1.75rem at 80rem to 2.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-0\/2{
+  padding: clamp(0rem,-2.5rem + 3.13vw,0.5rem)/* fluid from 0rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-0{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~p-0\.5\/2{
+  padding: clamp(0.125rem,-1.75rem + 2.344vw,0.5rem)/* fluid from 0.125rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-0\.5\/1{
+  padding: clamp(0.125rem,-0.5rem + 0.781vw,0.25rem)/* fluid from 0.125rem at 80rem to 0.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-0\.5\/1\.5{
+  padding: clamp(0.125rem,-1.125rem + 1.563vw,0.375rem)/* fluid from 0.125rem at 80rem to 0.375rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-0\/1{
+  padding: clamp(0rem,-1.25rem + 1.56vw,0.25rem)/* fluid from 0rem at 80rem to 0.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~p-0\/1\.5{
+  padding: clamp(0rem,-1.875rem + 2.344vw,0.375rem)/* fluid from 0rem at 80rem to 0.375rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~px-1\/3{
+  padding-left: clamp(0.25rem,-2.25rem + 3.13vw,0.75rem)/* fluid from 0.25rem at 80rem to 0.75rem at 96rem */;
+  padding-right: clamp(0.25rem,-2.25rem + 3.13vw,0.75rem)/* fluid from 0.25rem at 80rem to 0.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~px-2\/4{
+  padding-left: clamp(0.5rem,-2rem + 3.13vw,1rem)/* fluid from 0.5rem at 80rem to 1rem at 96rem */;
+  padding-right: clamp(0.5rem,-2rem + 3.13vw,1rem)/* fluid from 0.5rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~px-2\/5{
+  padding-left: clamp(0.5rem,-3.25rem + 4.69vw,1.25rem)/* fluid from 0.5rem at 80rem to 1.25rem at 96rem */;
+  padding-right: clamp(0.5rem,-3.25rem + 4.69vw,1.25rem)/* fluid from 0.5rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~px-3\/6{
+  padding-left: clamp(0.75rem,-3rem + 4.69vw,1.5rem)/* fluid from 0.75rem at 80rem to 1.5rem at 96rem */;
+  padding-right: clamp(0.75rem,-3rem + 4.69vw,1.5rem)/* fluid from 0.75rem at 80rem to 1.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~px-8\/16{
+  padding-left: clamp(2rem,-8rem + 12.5vw,4rem)/* fluid from 2rem at 80rem to 4rem at 96rem */;
+  padding-right: clamp(2rem,-8rem + 12.5vw,4rem)/* fluid from 2rem at 80rem to 4rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~px-1{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~px-1\.5\/5{
+  padding-left: clamp(0.375rem,-4rem + 5.469vw,1.25rem)/* fluid from 0.375rem at 80rem to 1.25rem at 96rem */;
+  padding-right: clamp(0.375rem,-4rem + 5.469vw,1.25rem)/* fluid from 0.375rem at 80rem to 1.25rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~py-1\/3{
+  padding-top: clamp(0.25rem,-2.25rem + 3.13vw,0.75rem)/* fluid from 0.25rem at 80rem to 0.75rem at 96rem */;
+  padding-bottom: clamp(0.25rem,-2.25rem + 3.13vw,0.75rem)/* fluid from 0.25rem at 80rem to 0.75rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~py-2\/4{
+  padding-top: clamp(0.5rem,-2rem + 3.13vw,1rem)/* fluid from 0.5rem at 80rem to 1rem at 96rem */;
+  padding-bottom: clamp(0.5rem,-2rem + 3.13vw,1rem)/* fluid from 0.5rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~py-2\/8{
+  padding-top: clamp(0.5rem,-7rem + 9.38vw,2rem)/* fluid from 0.5rem at 80rem to 2rem at 96rem */;
+  padding-bottom: clamp(0.5rem,-7rem + 9.38vw,2rem)/* fluid from 0.5rem at 80rem to 2rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~py-3\/6{
+  padding-top: clamp(0.75rem,-3rem + 4.69vw,1.5rem)/* fluid from 0.75rem at 80rem to 1.5rem at 96rem */;
+  padding-bottom: clamp(0.75rem,-3rem + 4.69vw,1.5rem)/* fluid from 0.75rem at 80rem to 1.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~py-1\/2{
+  padding-top: clamp(0.25rem,-1rem + 1.56vw,0.5rem)/* fluid from 0.25rem at 80rem to 0.5rem at 96rem */;
+  padding-bottom: clamp(0.25rem,-1rem + 1.56vw,0.5rem)/* fluid from 0.25rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~py-1\/4{
+  padding-top: clamp(0.25rem,-3.5rem + 4.69vw,1rem)/* fluid from 0.25rem at 80rem to 1rem at 96rem */;
+  padding-bottom: clamp(0.25rem,-3.5rem + 4.69vw,1rem)/* fluid from 0.25rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~py-0{
+  /*
+error - Missing end value
+*/
+}
+
+.\~xl\/2xl\:\~py-0\.5\/4{
+  padding-top: clamp(0.125rem,-4.25rem + 5.469vw,1rem)/* fluid from 0.125rem at 80rem to 1rem at 96rem */;
+  padding-bottom: clamp(0.125rem,-4.25rem + 5.469vw,1rem)/* fluid from 0.125rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~py-0\/4{
+  padding-top: clamp(0rem,-5rem + 6.25vw,1rem)/* fluid from 0rem at 80rem to 1rem at 96rem */;
+  padding-bottom: clamp(0rem,-5rem + 6.25vw,1rem)/* fluid from 0rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~pr-12\/14{
+  padding-right: clamp(3rem,0.5rem + 3.13vw,3.5rem)/* fluid from 3rem at 80rem to 3.5rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~pb-2\/4{
+  padding-bottom: clamp(0.5rem,-2rem + 3.13vw,1rem)/* fluid from 0.5rem at 80rem to 1rem at 96rem */;
+}
+
+.\~xl\/2xl\:\~pl-1\/2{
+  padding-left: clamp(0.25rem,-1rem + 1.56vw,0.5rem)/* fluid from 0.25rem at 80rem to 0.5rem at 96rem */;
+}
+
+.\~\/2xl\:\~text-lg\/xl{
+  font-size: clamp(1.125rem,1.036rem + 0.223vw,1.25rem)/* fluid type from 1.125rem at 40rem to 1.25rem at 96rem */;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 80rem){
+  .xl\:gap-6{
+    gap: 1.5rem;
+  }
+
+  @media not all and (min-width: 96rem){
+    .xl\:max-2xl\:w-5{
+      width: 1.25rem;
+    }
+
+    .xl\:max-2xl\:w-\[110px\]{
+      width: 110px;
+    }
+
+    .xl\:max-2xl\:w-\[26px\]{
+      width: 26px;
+    }
+
+    .xl\:max-2xl\:w-\[80px\]{
+      width: 80px;
+    }
+
+    .xl\:max-2xl\:max-w-\[188px\]{
+      max-width: 188px;
+    }
+
+    .xl\:max-2xl\:gap-6{
+      gap: 1.5rem;
+    }
+
+    .xl\:max-2xl\:text-xs{
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+@media (min-width: 96rem){
+  .\32xl\:hidden{
+    display: none;
+  }
+
+  .\32xl\:w-10\/12{
+    width: 83.333333%;
+  }
+
+  .\32xl\:w-3\/12{
+    width: 25%;
+  }
 }
